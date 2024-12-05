@@ -1,0 +1,29 @@
+body{
+  text-align: center;
+  background-color: #E8D7FF;
+}
+
+h2,h3{
+  text-align: center;
+  font-family: "Fugaz One";
+}
+
+
+h2{
+  color: #6D326D;
+}
+
+h3{
+  color: #F3FFE1;
+}
+
+.login,.register{
+  background-color: #DFFFD6;
+  color: #6D326D;
+  padding: 10px 10px;
+  font-size: 20px;
+  border: none;
+  margin: 10px;
+  font-family: "Fugaz One";
+
+}
