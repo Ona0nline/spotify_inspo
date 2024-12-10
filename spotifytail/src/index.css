@@ -1,0 +1,29 @@
+/* Tailwind layers */
+
+/* Customs for specific html elements -- Add to Base layer (h2,button,section etc) */
+@tailwind base;
+/* Customs for more complex classes -- Add to components layer (.cart,.badge etc) */
+@tailwind components;
+/* Customs that tailwind doesn't cover by default -- Add to utilities layer */
+@tailwind utilities;
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Implementation eg. */
+
+@layer components{
+  .card{
+    /* Apply directive gives access to multiple tailwind components without needing to write
+    all the css declarations */
+    @apply flex items-center justify-center;
+    width: 200px;
+    height: 50px;
+    /* Can access themes from the config section */
+    background-color: theme(colors.twitter-blue);
+    border-radius: 20px;
+    border: 0.7px solid green;
+  }
+}
+
